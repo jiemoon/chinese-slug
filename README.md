@@ -29,9 +29,24 @@ $ composer require jiemoon/chinese-slug
 
 ## Usage
 
+Modify `.env`, Add Biadu Fanyi Config. 
+> You can get the config, after register an account in [api.fanyi.baidu.com](http://api.fanyi.baidu.com/api/trans/product/index)
+```
+BAIDU_FANYI_API_ID=xxx
+BAIDU_FANYI_API_SECRET=xxx
+```
+
+Edit `cofig/app.php` Add Provider and Alias
+```php
+        Jiemoon\ChineseSlug\ChineseSlugServiceProvider::class,
+        ...
+        'ChineseSlug' => Jiemoon\ChineseSlug\Facades\ChineseSlug::class,
+```
+
 ``` php
-$skeleton = new Jiemoon\ChineseSlug();
-echo $skeleton->echoPhrase('Hello, League!');
+$slug = \ChineseSlug::generateUniqueSlug($title, 'posts');
+# or
+$slug = app('chineseslug')->generateUniqueSlug($title, 'posts');
 ```
 
 ## Change log

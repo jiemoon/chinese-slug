@@ -1,6 +1,6 @@
 <?php
 
-namespace Jiemoon\ChineseSlug\Faceds;
+namespace Jiemoon\ChineseSlug\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
