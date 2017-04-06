@@ -7,19 +7,15 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+Laravel Package for translate string to english, then use it to create a slug.
 
 ## Structure
 
 If any of the following are applicable to your project, then the directory structure should follow industry best practises by being named the following.
 
 ```
-bin/        
-config/
 src/
 tests/
-vendor/
 ```
 
 
@@ -34,7 +30,7 @@ $ composer require jiemoon/chinese-slug
 ## Usage
 
 ``` php
-$skeleton = new jiemoon\chinese-slug();
+$skeleton = new Jiemoon\ChineseSlug();
 echo $skeleton->echoPhrase('Hello, League!');
 ```
 
@@ -47,19 +43,6 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ``` bash
 $ composer test
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
-
-## Security
-
-If you discover any security related issues, please email jiemoon2010@gmail.com instead of using the issue tracker.
-
-## Credits
-
-- [jiemoon][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
@@ -77,5 +60,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-scrutinizer]: https://scrutinizer-ci.com/g/jiemoon/chinese-slug/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/jiemoon/chinese-slug
 [link-downloads]: https://packagist.org/packages/jiemoon/chinese-slug
-[link-author]: https://github.com/jiemoon
 [link-contributors]: ../../contributors
