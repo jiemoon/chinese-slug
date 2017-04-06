@@ -11,7 +11,7 @@ Laravel Package for translate string to english, then use it to create a slug.
 
 ## Structure
 
-If any of the following are applicable to your project, then the directory structure should follow industry best practises by being named the following.
+If any of the following are applicable to your project, then the directory structure should follow industry best practises by being named the following..
 
 ```
 src/
