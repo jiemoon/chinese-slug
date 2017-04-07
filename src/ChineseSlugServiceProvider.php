@@ -20,9 +20,7 @@ class ChineseSlugServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/config/chineseslug.php' => config_path('chineseslug.php'),
-        ]);
+        //
     }
 
     /**
@@ -35,6 +33,16 @@ class ChineseSlugServiceProvider extends ServiceProvider
         $this->app->bind('chineseslug', function() {
             return new ChineseSlug(new ChineseSlugRepository);
         });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array();
     }
 }
 
