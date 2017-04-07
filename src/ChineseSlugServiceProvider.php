@@ -42,7 +42,7 @@ class ChineseSlugServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array();
+        return ['Jiemoon\ChineseSlug\ChineseSlug'];
     }
 }
 
